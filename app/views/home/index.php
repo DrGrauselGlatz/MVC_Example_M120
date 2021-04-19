@@ -1,1 +1,1 @@
-<?= 'Hallo '. $data['name']; ?>
+Test <?php echo $data['name']; ?>
