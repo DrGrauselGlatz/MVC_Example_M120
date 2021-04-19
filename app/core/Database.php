@@ -16,22 +16,12 @@
             return $sth->fetch();
         }
 
-
-
-
-
-
-
-        
-
         function fetchAllAssoc($sql, $bindData=null) {
 
             $sth = $this->db->prepare($sql);
             $sth->execute($bindData);
             return $sth->fetchAll(PDO::FETCH_ASSOC);
         }
-
-        
 
         public function onlyExecute($sql, $bindData=null) {
                 
